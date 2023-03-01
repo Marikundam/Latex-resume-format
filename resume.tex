@@ -1,0 +1,377 @@
+\% A4 paper size by default, use `letterpaper' for US letter
+
+\documentclass[11pt, a4paper]{russell}
+
+% Configure page margins with geometry
+%\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% russell Colors: russell-emerald, russell-skyblue, russell-red, russell-pink, russell-orange
+%                 russell-nephritis, russell-concrete, russell-darknight, russell-purple
+\colorlet{russell}{russell-black}
+% Uncomment if you would like to specify your own color
+% \definecolor{russell}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with russell color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%   PERSONAL INFORMATION
+%   Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Marikundam}{Harshitha}
+% \position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+\address{New Nagole,Hyderabad,India}
+
+\mobile{9248171497}
+\email{marikundamdec@gmail.com}
+%\dateofbirth{January 1st, 1970}
+%\homepage{www.posquit0.com} 
+\github{github.com/Marikundam}
+\linkedin{linkedin.com/in/marikundamharshitha/}
+
+%-------------------------------------------------------------------------------
+ %  BIBLIOGRAPHY
+ %-------------------------------------------------------------------------------
+\addbibresource{cv/references.bib}
+\date*{}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Marikundam Harshitha~~~·~~~Résumé}
+  {\thepage}
+
+%-------------------------------------------------------------------------------
+%   CV/RESUME CONTENT
+%   Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+
+%Driven student leveraging Undergrad in Electronics and Communication Engineering. Offers strong interpersonal and prioritization skills . Fervent to learn and explore more techie enigmas.
+%----------------------------------------------------------------------------
+%    SECTION TITLE
+%------------------------------------------------------------------------------
+\cvsection{Personal Profile}
+ 
+ Innovative student leveraging Undergrad in Electronics Communication Engineering .Possess a  strong foundation in both hardware and software, with expertise in using controllers and processors such as Arduino UNO and Raspberry Pi. Have  an ability to learn quickly and adapt to new technologies, as well as a strong attention to detail and a commitment to quality.Excited to continue exploring new frontiers in the field of electronics and communication engineering.
+
+%-------------------------------------------------------------------------------
+%   SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+
+%-------------------------------------------------------------------------------
+%   CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+  {\small Jawaharlal Nehru Technological University Hyderabad} % Degree
+  {\normalsize B.Tech. in Electronics Communication Engineering
+  (cgpa:9.04)} % Institution
+  {\small Hyderabad, India} % Location
+  {\small Aug. 2019 - 2023} % Date(s)
+  {
+    \begin{cvitems} % Description(s) bullet points
+    \item {\small Relevant coursework:}
+      \begin{itemize}
+        \item \small \textit{Electronics}: Antennas Propogation,Basic Electrical Engineering,Control Systems, Digital Signal Processing, Microprocessors and Controllers,VLSI Design 
+        \item \small \textit{Communication}:Computer Networks,Network Analysis ,Cellular Communications
+        \item \small \textit{Computer Science}:  Probability \& Statistics, Data Structures, Artificial Intelligence,Digital Image Processing 
+    \end{itemize}
+  %\item {\small Cumulative Grade Point Average: 3.65/4.3}
+    \end{cvitems}
+  }
+
+  \cventry
+  {\small Narayana Junior College} % Degree
+  {\normalsize High School(cgpa:98.3)} % Institution
+  {\small Hyderabad, India} % Location
+  {\small Aug. 2016 - June 2018} % Date(s)
+  {
+  }
+
+  
+
+  %\vspace{-3mm}
+
+%---------------------------------------------------------
+\end{cventries}
+%-------------------------------------------------------------------------------
+%   SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+
+
+%-------------------------------------------------------------------------------
+%   CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+  {\small Future Wireless Communication Intern} % Job title
+  {\normalsize NG-RAN IIT Hyderabad} % Organization
+  {\small Kandi, Sangareddy, India} % Location
+  {\small Feb. 2023 - present} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item \small Contributed to product features, system reliability and designing. 
+      \item \small Worked on environments like Termux, Ranger and Latex  for software developing . 
+      \item \small Encouraged new best practices and patterns for digital designing of products.
+      \item \small Supported the Future Wireless Communication project.
+      \end{cvitems}
+    }
+%---------------------------------------------------------
+
+\vspace{3mm}
+  \cventry
+  {\small Research Intern} % Job title
+  {\normalsize Divecha Centre for Climate Change} % Organization
+  {\small IISc.Bangalore, India} % Location
+  {\small Dec. 2021 - Oct. 2022 } % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item \small Worked on data aquisition,coding,literature survey,data visualization and published papers under Prof.Rohit Chakraborty.
+      \item \small Participated in conferences representing as one of the authors.
+      \item \small Studied the climatology of different areas , developed a data analysis sheet.
+      \item \small Leveraged a variety of technologies such as Matplotlib, Pandas and  Azure.
+      \end{cvitems}
+    }
+%---------------------------------------------------------
+
+\vspace{3mm}
+  \cventry
+  {\small Robotics Intern} % Job title
+  {\normalsize Leap Robots} % Organization
+  {\small Hyderabad, India} % Location
+  {\small April. 2022 - May. 2022 } % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item \small Experienced with a range of sensors,micro-controllers and processors.
+      \item \small Deployed small-scale initiative using Internet of Things.
+      \item \small Worked on raw embedded systems using 8086 and 8085.
+      \item \small Explored 3D printing techniques and optimization of different designs.
+      \end{cvitems}
+    }
+%--------------------------------------------------------------------
+
+\vspace{3mm}
+  \cventry
+  {\small Machine Learning Intern} % Job title
+  {\normalsize Verzeo} % Organization
+  {\small Online} % Location
+  {\small Feb. 2020 - July. 2020 } % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item \small Worked on data science pipeline and deployed a model using various algorithms.
+      \item \small Learnt the cutting-edge programming languages and tools as in Python,AI and Neural Networks.
+      \item \small Implemented Aging Signs Detection Model that can detect and localize the aging from image of a person.
+      \item \small Exposed to emerging technologies as in Artificial Intelligence,Neural Networks.
+      \end{cvitems}
+    }
+\end{cventries}
+
+\vspace{4mm}
+%-------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%   SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Projects}
+%-------------------------------------------------------------------------------
+%   CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+%---------------------------------------------------------
+\cventry
+  {\small Keras,Neural Networks} % Job title
+  {\normalsize Automatic Music Generator} % Organization
+  {\small Online} % Location
+  {\small Nov. 2022 - Present } % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item \smallCreating An autonomous music generator that can play any style, genre, or mood
+      \item \small Platform makes use of Artificial Neural Networks, which were inspired by the Mubert music generator, but   here applying for Karnatik music.
+      \item \small Worked on vast library of audio samples that are then combined in real-time to create new and unique music using pandas. 
+      \end{cvitems}
+    }
+
+%-----------------------------------------------------------------
+\vspace{3mm}
+\cventry
+  {\small Arduino UNO,Node MCU} % Job title
+  {\normalsize Home Automation using IoT} % Organization
+  {\small Online} % Location
+  {\small Feb. 2022 - April. 2022 } % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item \smallCreating Worked on creating  a power-saving lightbulb based on embedded electronics, more of a green-building idea.
+      \item \small Used sensors, gates, mini-solar panels, and eventually a buletooth door monitoring system to implement
+      \item \small Extended the idea more efficiently using IoT where one can control most of the electronic devices on cloud
+      \end{cvitems}
+      }
+%--------------------------------------------------------------------------
+\vspace{3mm}
+\cventry
+  {\small ML,AI,Python,Tensor Flow} % Job title
+  {\normalsize Age Detecting System} % Organization
+  {\small Online} % Location
+  {\small March. 2020 - July. 2020 } % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item \smallCreating Created a model that can identify the ageing and its location from a photograph of a person with wrinkles.
+      \item \small Pre-trained Efficient Net Models that comprise of the codes for the detection of wrinkles, dark spots and puffy
+      eyes are downloaded.
+      \item \small For analysis, training, and testing, a dataset made up of facial images with a variety of dark spots, wrinkles, and puffy eyes is presented.
+      \end{cvitems}
+    }
+\end{cventries}
+
+\vspace{4mm}
+%-------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%   SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Course Project}
+%-------------------------------------------------------------------------------
+%   CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+%---------------------------------------------------------
+\cventry
+  {\small Minor Project} % Job title
+  {\normalsize Wireless Power Transfer Through Router} % Title
+  {\small JNTUH} % Location
+  {\small Sept. 2022 - Jan. 2023 } % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item \smallCreating The project's goal is to make battery-free, long-lasting wireless networks possible. To this end, a call for "development of wireless charging system by harnessing existing Wi-Fi networks" using Simulink model-based design has been issued.
+      \item \small The main factors taken into account are gain, radiation characteristics, Figure of Merit, bandwidth, and matching efficiency.
+      \item \small We have specifically demonstrated that the ubiquitous Wi-Fi router, which is a component of wireless communication infrastructure, can offer far field wireless power without materially degrading the network's communication performance.
+      \end{cvitems}
+    }
+%------------------------------------------------------------------------
+\vspace{3mm}
+\cventry
+  {\small Major Project} % Job title
+  {\normalsize Weather Monitoring Drone} % Title
+  {\small JNTUH} % Location
+  {\small Jan. 2023 - Present } % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item\smallCreating Working on building  an Autopilot Drone capable of measuring climate parameters like Temperature, Humidity and Air quality using Arduino sensors for accurate weather
+      forecasting.
+      \item \small Building a system that can measure meteorological parameters like temperature,
+      humidity and Air quality at any altitude.
+      \item \small To build a Smart drone that can go anywhere (Near buildings, structures, urban environments etc.) and measure the required parameters.
+      \item \small Using a combination of GPS, inertial navigation, and other sensors to ensure that the drone stays on course and maintains a stable flight path. The flight control system also allows the drone to be programmed to follow a specific flight plan, which can be used to collect data from specific locations.
+      \end{cvitems}
+    }
+\end{cventries}
+%-------------------------------------------------------------------------------
+%   SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Publications}
+\begin{cventries}
+
+%---------------------------------------------------------
+\begin{enumerate}
+    \item Chakraborty, R., P. S. Menghal, M. Harshitha, and M. A. Sodunke. "Climatology of lightning activities across the Equatorial African region." In 2022 3rd URSI Atlantic and Asia Pacific Radio Science Meeting (AT-AP-RASC), pp. 1-4. IEEE, 2022.
+    \item Chakraborty, R., P. S. Menghal, M. Harshitha, and M. A. Sodunke."Long term variability in lightning occurrences over the Congo Basin Africa."In 21st National Space Science Symposium. 
+\end{enumerate}
+\end{cventries}
+
+\vspace{15mm}
+%-------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%   SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Skills \& Technologies}
+
+%-------------------------------------------------------------------------------
+%   CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+\begin{itemize}[leftmargin=0.15in, label={}] 
+\small{\item{ {\textbf{Languages}}{: Java, Python, JavaScript, HTML/CSS } \\
+{\textbf{Frameworks}}{: React.js} \\
+{\textbf{Developer Tools}}{: VS Code, Visual Studio, PyCharm, IntelliJ,Vivado} \\
+{\textbf{Libraries}}{: pandas, Matplotlib,Keras}\\
+{\textbf{Other skills}}{:Artificial Intelligence,Machine Learning,UX Designing,Mern Stack,Internet of Things,BlockChain}\\
+{\textbf{Controllers/Processor}s}{:Arduino UNO, Raspberry Pi}
+}}
+\end{itemize}
+\end{cventries}
+%-------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%   SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Certifications}
+
+%-------------------------------------------------------------------------------
+%   CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+\begin{enumerate}
+    \item The Complete 2022 Web Development Bootcamp -Udemy
+    \item The Complete Facebook Ads Marketing Course 2021 - Udemy
+    \item Foundations of User Experience (UX) Design - Google
+    \item AI For Everyone - DeepLearning.AI
+    \item Machine Learning with Python - Verzeo
+    \item Micro Mechatronics and Soft Robotics - IIIT Indore
+\end{enumerate}
+\end{cventries}
+%-------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%   SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Further Tentative Interests}
+
+%-------------------------------------------------------------------------------
+%   CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+\begin{cvitems}
+\item \smallCreating Semiconductors and its applications
+\item \small Energy conservation in electronics
+\item \small Data Science and Image segmentation
+\item \small Robotics
+\end{cvitems}
+\end{cventries}
+
+%---------------------------------------------------------
+%\centering{\textbf{References available upon request.}}
+%-------------------------------------------------------------------------------
+\end{document}
